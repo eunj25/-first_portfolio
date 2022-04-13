@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>home</title>
+    <!-- jqery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script/custom.js"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="script/slick/slick.css">
+    <link rel="stylesheet" href="script/slick/slick-theme.css">
+    <script src="script/slick/slick.min.js"></script>
+    
+  </head>
+  <body>
+    
+    <div class="container home">
+      <div class="home-inner">
+     
+        <div class="index-header">
+          <a href="index.html"><strong class="logo">COFFEA.</strong></a>
+        </div>
+          
+        <section class="welcome">
+          <div class="welcome-photo">
+            <div>
+              <img src="images/welcom-photo.png" alt="">
+              <div class="heading">
+                <h3>COFFEA.와 당신의 손길로 <br>사라져 가는 커피를 되살립니다.</h3>
+                <a href="#none" class="more">자세히 보기</a>
+              </div>       
+            </div>
+            <div>
+              <img src="images/welcom-photo-02.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="main">
+          <div class="main-menu">
+            <div class="menu-icon" onclick="location.href='store.html'">
+              <div class="icon"></div>
+              <b>스토어</b>
+            </div>
+            <div class="menu-icon" onclick="location.href='story.html'">
+              <div class="icon"></div>
+              <b>홈 카페</b>
+            </div>
+            <div class="menu-icon">
+              <div class="icon"></div>
+              <b>입점브랜드</b>
+            </div>
+            <div class="menu-icon">
+              <div class="icon"></div>
+              <b>기획전</b>
+            </div> 
+          </div>        
+          <div class="banner">
+            <a href="#none">
+              <img src="images/main-banner-02.png" alt="">
+            </a>
+          </div>   
+        </section>
+        <section class="capsule">
+          <h3>캡슐커피</h3>
+          <div class="capsule-items">
+            <div class="item" onclick="location.href='products.html'">
+              <div class="photo">
+                <img src="images/capsule-photo-01.png" alt="">
+              </div>
+              <div class="detail">
+                <small class="detail-brand">돌체구스토</small>
+                <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                <p><span>11%</span> 7,900 <small>10,220</small></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="photo">
+                <img src="images/capsule-photo02.jpg" alt="">
+              </div>
+              <div class="detail">
+                <small class="detail-brand">돌체구스토</small>
+                <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                <p><span>11%</span> 7,900 <small>10,220</small></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="photo">
+                <img src="images/capsule-photo04.jpg" alt="">
+              </div>
+              <div class="detail">
+                <small class="detail-brand">돌체구스토</small>
+                <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                <p><span>11%</span> 7,900 <small>10,220</small></p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="photo">
+                <img src="images/capsule-photo03.jpg" alt="">
+              </div>
+              <div class="detail">
+                <small class="detail-brand">돌체구스토</small>
+                <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                <p><span>11%</span> 7,900 <small>10,220</small></p>
+              </div>
+            </div>
+          </div>
+          <a href="#none" class="btn-more">더 많은 제품보기</a>
+        </section>
+        <section class="sale">
+          <h3>타임딜</h3>
+            <div class="content">
+              <div class="photo">
+                <img src="images/time-sale-photo.jpg" alt="">
+              </div>
+              <div class="detail">
+                <!-- <div>타이머</div> -->
+                <h4>모리츠 에스프레소 커피머신 MO-EM2000B</h4>
+                <strong>48%</strong> 
+                <p>45,600 <small>79,000</small></p>
+              </div>
+            </div>
+        </section>
+        <section class="event">
+          <h3>기획전</h3>
+          <div class="event-item">
+            <div class="item">
+              <a href="#none"><img src="images/event-01.jpg" alt=""></a>
+            </div>
+            <div class="item">
+              <a href="#none"><img src="images/event-03.jpg" alt=""></a>
+            </div>
+            <div class="item">
+              <a href="#none"><img src="images/event-02.jpg" alt=""></a>
+            </div>
+          </div>
+        </section>
+        <section class="best">
+          <h3>인기상품</h3>
+          <div class="tab-inner">
+
+            <input type="radio" name="tabmenu" id="tab1" checked>
+            <input type="radio" name="tabmenu" id="tab2">
+            <input type="radio" name="tabmenu" id="tab3">
+            <input type="radio" name="tabmenu" id="tab4">
+            <input type="radio" name="tabmenu" id="tab5">
+
+            <div class="tab-btn">
+              <label for="tab1">전체</label>
+              <label for="tab2">캡슐</label>
+              <label for="tab3">원두</label>
+              <label for="tab5">드립백</label>
+              <label for="tab4">머신</label>
+            </div>
+
+            <div class="tabs">
+              <div class="best-tab tab1">
+                <div class="contents">
+                  <div>
+                    <div class="tab-content">
+                      <span>1</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo-01.png" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>2</span>
+                      <div class="photo">
+                        <img src="images/drip-02.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>3</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>4</span>
+                      <div class="photo">
+                        <img src="images/machine-03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>5</span>
+                      <div class="photo">
+                        <img src="images/drip-04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>6</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-tab tab2">
+                <div class="contents">
+                  <div>
+                    <div class="tab-content">
+                      <span>1</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo-01.png" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>2</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo02.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>3</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>4</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>5</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>6</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-tab tab3">
+                <div class="contents">
+                  <div>
+                    <div class="tab-content">
+                      <span>1</span>
+                      <div class="photo">
+                        <img src="images/beans-01.png" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>2</span>
+                      <div class="photo">
+                        <img src="images/beans-02.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>3</span>
+                      <div class="photo">
+                        <img src="images/beans-03.png" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>4</span>
+                      <div class="photo">
+                        <img src="images/beans-04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>5</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>6</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-tab tab4">
+                <div class="contents">
+                  <div>
+                    <div class="tab-content">
+                      <span>1</span>
+                      <div class="photo">
+                        <img src="images/machine-01.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>2</span>
+                      <div class="photo">
+                        <img src="images/machine-02.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>3</span>
+                      <div class="photo">
+                        <img src="images/machine-04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>4</span>
+                      <div class="photo">
+                        <img src="images/machine-03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>5</span>
+                      <div class="photo">
+                        <img src="images/machine-05.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>6</span>
+                      <div class="photo">
+                        <img src="images/machine-06.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="best-tab tab5">
+                <div class="contents">
+                  <div>
+                    <div class="tab-content">
+                      <span>1</span>
+                      <div class="photo">
+                        <img src="images/drip-01.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>2</span>
+                      <div class="photo">
+                        <img src="images/drip-02.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>3</span>
+                      <div class="photo">
+                        <img src="images/drip-03.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>4</span>
+                      <div class="photo">
+                        <img src="images/drip-04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="tab-content">
+                      <span>5</span>
+                      <div class="photo">
+                        <img src="images/drip-05.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                    <div class="tab-content">
+                      <span>6</span>
+                      <div class="photo">
+                        <img src="images/capsule-photo04.jpg" alt="">
+                      </div>
+                      <div class="detail">
+                        <small class="detail-brand">돌체구스토</small>
+                        <h4>스타벅스 하우스블렌드 캡슐커피</h4>
+                        <p><span>11%</span> 7,900 <small>10,220</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- footer-include -->
+        <div class="include-footer"></div>
+        <footer>
+          <div>
+            <a href="#none" class="trigger">
+              <img src="images/menu(1).svg" alt="">
+            </a>
+            <div class="trigger-inner">
+              <div class="trigger-logo">
+                <i class="xi-close-thin close"></i>
+                <h1 class="logo">COFFEA.</h1>
+              </div>
+              <div class="login-btn">
+                <a href="sign-up.html">로그인</a>
+                <a href="sign-in.html">회원가입</a>
+              </div>
+              <div class="trigger-item">
+                <div class="trigger-title"><img src="images/books.svg" alt="">홈 스토리</div>
+                <div class="trigger-content">
+                  <a href="story.html">홈</a>
+                  <a href="#none">나만의 홈 카페</a>
+                  <a href="#none" class="new">홈 카페 레시피</a>
+                  <a href="#none">커피 취향 테스트</a>
+                  <a href="#none">기획전</a>
+                </div>
+              </div>
+              <div class="trigger-item">
+                <div class="trigger-title"><img src="images/coffee-shop(1).svg" alt="">스토어</div>
+                <div class="trigger-content">
+                  <a href="store.html">홈</a>
+                  <a href="#none" class="new">캡슐</a>
+                  <a href="#none">원두</a>
+                  <a href="#none">드립백</a>
+                  <a href="#none">머신</a>
+                  <a href="#none">악세사리</a>
+                </div>
+              </div>
+              <a href="#none" class="brand"><b>입점 브랜드</b></a>
+              <a href="#none" class="buyer">판매자 신청</a>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div>
+            <a href="store.html">
+              <img src="images/shopping-bag.svg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="index.html">
+              <img src="images/home(1).svg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="story.html">
+              <img src="images/buying.svg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="mypage.html">
+              <img src="images/user.svg" alt="">
+            </a>
+          </div>
+              
+        </footer>
+        <!-- footer-include -->
+
+      </div>
+    </div>
+  
+  </body>
+</html>

@@ -1,0 +1,110 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Defailt CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+/*
+input {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+*/
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* Common CSS */
+.login {
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.34);
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0;
+}
+.login span {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+.login label {
+  display: block;
+  margin: 10px 0;
+}
+.login a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+.login input[type=text],
+.login input[type=password],
+.login input[type=amail] {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  outline: none;
+}
+.login input[type=text]:hover,
+.login input[type=password]:hover,
+.login input[type=amail]:hover {
+  border: 1px solid royalblue;
+  box-shadow: 0 0 5px royalblue;
+}
+
+.login input[type=button] {
+  width: 100%;
+  padding: 8px;
+  background-color: royalblue;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.login input[type=button]:hover {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,222 @@
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+@font-face {
+    font-family: 'ELAND_Choice_M';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_M.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'ELAND_Choice_M';
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background: url(images/background.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+input, buttom {
+  outline: none;
+}
+/* Common CSS */
+.login {
+  width: 400px;
+/*  height: 600px;*/
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.24);
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 50px;
+  box-sizing: border-box;
+}
+.login h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.field {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px 0;
+}
+input[type=email], 
+input[type=password] {
+  width: 92%;
+  padding: 8px 0;
+  border: none;
+  border-bottom: 1px solid #888;
+  padding-left: 25px;
+}
+input[type=email] {
+  background: url(images/user.png) no-repeat center left;
+  margin-bottom: 10px;
+}
+input[type=password] {
+  background: url(images/lock.png) no-repeat center left;
+}
+input[type=email]:focus, 
+input[type=password]:focus {
+  border-color: #454545;
+}
+input[type=email]::placeholder,
+input[type=password]::placeholder {
+  color: #888;
+  transition: 0.5s;
+}
+input[type=email]:focus::placeholder,
+input[type=password]:focus::placeholder {
+  opacity: 0;
+}
+
+.save {
+  margin-top: 5px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.save label {
+  float: left;
+}
+.save a{
+  float: right;
+}
+
+input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background-color: #a6bee0;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sns-login {
+  text-align: center;
+  margin-top: 30px;
+  line-height: 3em;
+  font-size: 14px;
+}
+.sns {}
+.sns a {
+  background-color: blue;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  font-size: 26px;
+  line-height: 55px;
+  border-radius: 50%;
+  margin: 3px;
+}
+.sns a:nth-child(1) {
+  background-color: #e4405f;
+}
+.sns a:nth-child(2) {
+  background-color: #3b5999;
+}
+.sns a:nth-child(3) {
+  background-color: #09b83e;
+}
+.sns a:nth-child(4) {
+  background-color: #ffe26a;
+}
+
+.sns a i {
+  transition: 0.5s;
+}
+.sns a:hover i {
+  transform: rotateY(360deg);
+}
+
+.sign-up {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.sign-up span {
+  display: block;
+}
+.sign-up a {
+  font-weight: 600;
+}
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+/* custom checkbox */
+input[id=save-id] {
+  display: none;
+}
+input[id=save-id] + em {
+  display: inline-block;
+/*  border: 1px solid;*/
+  width: 20px;
+  height: 20px;
+  background: url(images/checkbox.png) no-repeat;
+  background-position: left;
+  transform: translateY(6px);
+}
+input[id=save-id]:checked + em {
+  background-position: right;
+}
+
+.event {
+  text-align: center;
+  margin: 40px 0;
+  line-height: 2em;
+  font-size: 13px;
+}
+input[name=agree] {
+  display: none;
+}
+input[name=agree] + em {
+  display: inline-block;
+/*  border: 1px solid;*/
+  width: 20px;
+  height: 20px;
+  background: url(images/checkbox.png) no-repeat;
+  background-position: left;
+  vertical-align: middle;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+input[name=agree]:checked + em {
+  background-position: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

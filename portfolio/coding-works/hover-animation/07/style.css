@@ -1,0 +1,55 @@
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+
+body {
+	background-color: #222;
+	font-size: 15px;
+}
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.frame i {
+	color: #fff;
+	font-size: 8em;
+	margin: 20px;
+	text-shadow: 0 0 30px blue,
+				 0 0 60px blue,
+				 0 0 90px blue,
+				 0 0 120px blue;
+	animation: loading 3s 0s linear infinite;
+}
+.frame i:nth-child(2) {
+	text-shadow: 0 0 30px gold,
+				 0 0 60px gold,
+				 0 0 90px gold,
+				 0 0 120px gold;
+}
+.frame i:nth-child(3) {
+	text-shadow: 0 0 30px crimson,
+				 0 0 60px crimson,
+				 0 0 90px crimson,
+				 0 0 120px crimson;
+}
+.frame i:nth-child(4) {
+	text-shadow: 0 0 30px green,
+				 0 0 60px green,
+				 0 0 90px green,
+				 0 0 120px green;
+}
+
+
+@keyframes loading {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}

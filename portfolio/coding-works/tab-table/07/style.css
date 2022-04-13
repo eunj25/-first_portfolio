@@ -1,0 +1,63 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-size: 15px;
+	line-height: 1.6em;
+    background-color: #fff;
+}
+/* table */
+.price {
+	border-spacing: 15px;
+	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.price td {
+	/* 	border: 1px solid #ccc; */
+	width: 150px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	padding: 30px;
+}
+.price td h1 {
+	color: skyblue;
+	text-transform: capitalize;
+}
+.price td h2 {
+	color: orange;
+}
+.price td p {
+	
+}
+.price td hr {
+	border: none;
+	border-top: 1px dashed #ccc; 
+}
+.price td ul {
+	padding: 0;
+	list-style: none;
+	text-align: left;
+}
+.price td ul li big {
+	font-weight: bold;
+	margin-right: 5px;
+}
+.btu, .btu-blue {
+	text-decoration: none;
+	background-color: orange;
+	text-transform: capitalize;
+	padding: 8px;
+	border-radius: 5px;
+	color: #fff;
+	display: block; 
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+.btu-blue {
+	background-color: royalblue;
+}

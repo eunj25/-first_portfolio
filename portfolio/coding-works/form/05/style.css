@@ -1,0 +1,154 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+/* Entire Layout */
+header {
+  height: 50px;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.center {
+  height: calc(100vh - 40px);
+  position: relative;
+  background-color: #f8f8f8;
+}
+.login {
+  width: 350px;
+/*  height: 500px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login h1 {
+  font-size: 36px;
+  font-weight: normal;
+  padding: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.or {
+  display: block;
+  text-align: center;
+  position: relative;
+}
+.or:before,
+.or:after {
+  content: '';
+  position: absolute;
+  width: 42%;
+  height: 1px;
+  background-color: #ddd;
+  top: 50%;
+  transform: translateY(50%);
+}
+.or:before {
+  left: 0;
+}
+.or:after {
+  right: 0;
+}
+
+.btn {
+  border: 1px solid;
+  display: block;
+  margin: 10px 0;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: gray;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn.mobile {
+  border: 1px solid #afafaf;
+  color: #afafaf;
+  background: url(images/logo-mobile.png) no-repeat center left 10px;
+  background-color: #fff;
+}
+.btn.email {
+  background: url(images/logo-email.png) no-repeat center left 15px;;
+  background-color: #afafaf;
+}
+.btn.naver {
+  background: url(images/logo-naver.png) no-repeat center left 15px;
+  background-color: #25D366;
+}
+.btn.facebook {
+  background: #3b5999 url(images/logo-facebook.png) no-repeat center left 15px;
+}
+.btn.line {
+  background: #00c300 url(images/logo-line.png) no-repeat center left 15px;
+}
+
+input[id=chk] {
+  display: none;
+}
+input[id=chk] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  margin-top: -2px;
+  background: url(images/check.png) no-repeat;
+  background-position: left;
+}
+input[id=chk]:checked + em {
+  background-position: right;
+}
+
+.join-reqister {
+  text-align: center;
+  margin: 5px; 
+}
+.join-reqister a {
+  font-weight: 500;
+}
+.join-reqister a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

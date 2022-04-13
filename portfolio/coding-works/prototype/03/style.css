@@ -1,0 +1,228 @@
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'GmarketSansMedium';
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.container {
+/*  border: 1px solid;*/
+  height: 100vh;
+  position: relative;
+  transition: 0.5s;
+}
+header {}
+nav {
+/*  border: 1px solid;*/
+  overflow: hidden;
+  height: 100px;
+  width: 1300px;
+  margin: auto;
+}
+nav > div {
+  line-height: 100px;
+}
+.logo {
+  float: left;
+  font-size: 50px;
+  font-family: 'MaplestoryOTFBold';
+  color: #ff9d00;
+}
+.gnb {
+  float: right;
+  font-size: 14px;
+  line-height: 115px;
+  
+}
+.gnb a {
+  margin-right: 50px;
+}
+.gnb a:last-child {
+  margin-right: 0;
+}
+
+section {
+/*  background-color: #eee;*/
+  height: calc(100vh - 100px);
+  position: relative;
+}
+.section-inner {
+/*  border: 1px solid red;*/
+/*  height: 600px;*/
+  width: 1300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-inner > div {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.content {
+/*  border: 1px solid;*/
+  width: 50%;
+  float: left;
+}
+.content h1 {
+  line-height: 1.2em;
+  font-family: 'GmarketSansMedium';
+  font-size: 40px;
+  margin-top: 50px;
+  color: #4b4b4b;
+  line-height: 1.5em;
+}
+.content h1 span {
+  display: block;
+}
+.content h1 em {
+  color: #ff9d00;
+  font-size: 60px;
+  font-family: 'MaplestoryOTFBold';
+  font-style: normal;
+}
+.content p {
+  font-size: 18px;
+  line-height: 1.6em;
+  width: 600px;
+  color: #909090;
+}
+.btn {
+  background-color: #ff9d00;
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px 20px;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 12px;
+}
+.sns {
+/*  border: 1px solid;*/
+  margin-top: 150px;
+}
+.sns a {
+/*  border: 1px solid;*/
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background-color: #222;
+  line-height: 35px;
+}
+
+.photo {
+  float: right;
+  width: 50%;
+  text-align: right;
+/*  border: 1px solid;*/
+}
+.photo img {
+/*  border: 1px solid;*/
+  width: 90%;
+}
+label[for=mode] {
+/*  border: 1px solid;*/
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  cursor: pointer;
+  animation: mode 0.7s 0.5s linear both;
+  transition: 0.5s; 
+}
+@keyframes mode {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+label[for=mode]:hover {
+  width: 60px;
+}
+label[for=mode]:hover:before {
+  content:'Dark';
+  font-family: fontAwesome;
+  position: absolute;
+}
+/*mode changed chacked*/
+input[type=checkbox] {
+  display: none;
+}
+label[for=mode]:before {
+  content:'\f186';
+  font-family: fontAwesome;
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+input[id=mode]:checked ~ .container label[for=mode]:before {
+  content:'\f185';
+  color: #000;
+  background-color: #fff;
+  border: 1px solid; 
+}
+input[id=mode]:checked ~ .container label[for=mode]:hover:before {
+  content:'light';
+  font-family: fontAwesome;
+  position: absolute;
+}
+input[id=mode]:checked ~ .container {
+  background-color: #333;
+}
+input[id=mode]:checked ~ .container header nav .gnb a,
+input[id=mode]:checked ~ .container section .section-inner .content h1,
+input[id=mode]:checked ~ .container section .section-inner .content p  {
+  color: #fff;
+}
+input[id=mode]:checked ~ .container section .section-inner .sns a {
+  background-color: #fff;
+  color: #333;
+}
+
+
+
+
+
+
+
+

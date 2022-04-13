@@ -1,0 +1,133 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  /* line-height: 1.6em; */
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  /* width: 1280px;
+  margin: auto; */
+}
+.section-inner h1 span {
+  display: block;
+  font-size: 30px;
+  color:rgb(65, 129, 225);
+}
+.section-inner > p {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-top: 3px solid #ddd;
+  padding: 20px 0;
+  flex-wrap: nowrap;
+}
+
+.item {
+  /* display: flex;
+  flex-direction: column; */
+  width: 300px;
+  padding: 10px;
+  /* flex: 1; */
+  /* border: 1px solid #000; */
+  /* height: 360px; */
+  /* flex-wrap: nowrap; */
+}
+.item img {
+  width: 100%;
+}
+
+/* items */
+.item h4 {
+  margin: 0;
+  font-weight: normal;
+}
+.info {
+  margin-top: auto;
+  /* border: 1px solid #000; */
+}
+.item b {
+  color: rgb(65, 129, 225);
+}
+.item p {
+  margin: 0;
+  color: gold;
+  font-size: 13px;
+}
+.item p em {
+  color: #333;
+  font-style: normal;
+}
+.price {
+  display: block;
+  font-weight: 600;
+  color:rgb(6, 73, 172);
+}
+.best {
+  background-color: pink;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.best.badge {
+  background-color: rgb(140, 202, 140);
+}
+.item.event h4 {
+  color: crimson;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.item.event p {
+  color: #333;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .section-inner {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .section-inner {
+    width: 100%;
+    padding: 20px;
+  }
+  .section-inner h1 span {
+    display: block;
+  } 
+  .section-inner .item {
+    width: 100%;
+  }
+  .section-inner .items {
+    flex-direction: column;
+    border-top: 3px solid #ddd;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .section-inner .items .item {
+    border-bottom: 2px dotted #ddd;
+    padding-bottom: 20px;
+  }
+}

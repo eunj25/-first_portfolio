@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="uft-8">
+    <title>커스텀체크박스-로그인폼</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <form>
+      <div class="login">
+        <h1>login</h1>
+        <span class="field">아이디/이메일</span>
+        <label><input type=email placeholder="아이디를 입력하세요."></label>
+        <span class="field">비밀번호</span>
+        <label><input type=password placeholder="비밀번호를 입력하세요."></label>
+        <div class="save">
+          <label><input type="checkbox" id="save-id"><em></em> 아이디 기억하기</label>
+          <a href="#none">비밀번호 찾기</a>
+        </div>
+        <div class="event">이벤트 이메일 수신여부 동의하십니까?
+          <div class="custom-checkbox">
+            <label><input type=radio name="agree" checked><em></em> Yes</label>
+            <label><input type=radio name="agree"><em></em> No</label>
+          </div>
+        </div>
+        <input type="submit" value="login">
+        <div class="sns-login">
+          or login using
+          <div class="sns">
+            <a href="#none"><i class="xi-instagram"></i></a>
+            <a href="#none"><i class="xi-facebook"></i></a>
+            <a href="#none"><i class="xi-naver"></i></a>
+            <a href="#none"><i class="xi-kakaotalk"></i></a>
+          </div>
+        </div>
+        <div class="sign-up">
+          <span>아직 계정이 없으십니까?</span>
+          <a href="#none">회원가입</a>
+        </div>
+      </div>
+    </form>
+
+  </body>
+</html>

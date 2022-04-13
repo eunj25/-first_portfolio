@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>The World's Ocean</title>
+	<!-- jQuery CDN -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="video-frame">
+			<video src="images/Record - 65390.mp4" muted autoplay loop poster="images/placeholder-female.jpg"></video>
+		</div>
+		<div class="trigger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="logo">
+			<img src="images/logo(2).png" alt="">
+		</div>
+		<div class="anniversary">
+			<em>Anniversary</em><span>60</span>
+		</div>
+		<div class="heading">
+			<h1>LP album selected by Korea's best vinyl collector.</h1>
+			<!-- <span>Seoul Vinyl</span> -->
+			<p>
+				It is the first LP Bar & SHOP in Korea that plays black music and Citipop only on LPs.Seoul Vinyl is located in Haebangchon, Yongsan-gu.Haebangchon's unique free and diverse culture coexists in a place that suits it well.It is like heaven for those who love music and LP.It is the only place in Korea where you can enjoy drinks and food while listening to DJ music.
+			</p>
+			<a class="btn-book" href="#none">Book Now</a>
+			<a class="btn-learn" href="#none">Learn More</a>
+		</div>
+		<!-- GNB Modal -->
+		<div class="modal-gnb">
+			<ul class="gnb">
+				<li><a href="#none" data-text="KOREAN">KOREAN</a></li>
+				<li><a href="#none" data-text="HIPHOP / SOUL / R&B">HIPHOP / SOUL / R&B</a></li>
+				<li><a href="#none" data-text="ROCK / POP / ELECTRONICA">ROCK / POP / ELECTRONICA</a></li>
+				<li><a href="#none" data-text="JAZZ">JAZZ</a></li>
+				<li><a href="#none" data-text="ONLY SEOULVINYL">ONLY SEOULVINYL</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		// Trigger
+		$('.trigger').click(function(){
+			$(this).toggleClass('active')
+			$('.modal-gnb').fadeToggle() 
+			$('.anniversary').toggleClass('active')
+		})
+	</script>
+
+</body>
+</html>

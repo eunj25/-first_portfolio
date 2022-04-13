@@ -1,0 +1,90 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background: url(photo.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.toggle {
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 20;
+}
+.toggle.active i {
+  background-color: cornflowerblue;
+  transform: rotate(180deg);
+}
+.toggle i {
+  height: 50px;
+  width: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 40px;
+  color: #fff;
+  transition: 0.5s;
+}
+.overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+}
+.overlay.active {
+  transform: scale(100);
+}
+.gnb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.gnb.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.gnb a {
+  font-size: 3em;
+  line-height: 1.6em;
+  color: #fff;
+  position: relative;
+}
+.gnb a:before {
+  content: '';
+  position: absolute;
+  height: 15px;
+  width: 0;
+  background-color: rgb(78, 201, 201);
+  bottom: 5px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.gnb a:hover:before {
+  padding-right: 20px;
+  width: 100%;
+}

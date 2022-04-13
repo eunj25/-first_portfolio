@@ -1,0 +1,27 @@
+.container
+	label
+	header
+		.logo >h1
+		.gnb > (a*4)		
+	section
+		.content
+			h1 > span, em
+			p
+			a.btn
+			.sns
+				a> font-icon
+		.photo
+================================
+coco
+
+Home
+Menu
+Whot’s New
+Contact
+
+Dog clothing is
+Love COCO
+
+The leg part is 5 parts long, so you can wear it neatly regardless of the breed, and it is made of elastic fabric so your dog can work comfortably.
+
+The More

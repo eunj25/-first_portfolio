@@ -1,0 +1,115 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #eee;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+.login-form {
+  width: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+}
+.login-form h1 {
+  text-transform: capitalize;
+  font-weight: normal;
+}
+.sns {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.sns a {
+  padding: 8px;
+  border-radius: 5px;
+  flex: 1;
+  color: #fff;
+}
+.sns a:nth-child(1) {
+  background-color: #1877F2;
+}
+.sns a:nth-child(2) {
+  background-color: #1DA1F2;
+}
+.sns a:nth-child(3) {
+  background-color: #CD201F;
+}
+
+.field {
+  display: flex;
+  margin: 15px 0;
+}
+.field span {
+  flex: 1;
+  text-transform: capitalize;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  flex: 5;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+  outline: #1877F2;
+  border: 1px solid #1877F2;
+}
+.btn-login {
+  float: right;
+  width: 150px;
+  background-color: #1877F2;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+ @media (max-width: 768px) {
+  .login-form {
+    margin: 10px;
+    width: 100%;
+  }
+  .sns {
+    flex-direction: column;
+  }
+  .field {
+    flex-direction: column;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    padding: 7px;
+  }
+  .btn-login {
+    width: 100%;
+  }
+  
+ }

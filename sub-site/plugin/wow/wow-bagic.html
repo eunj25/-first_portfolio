@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wow</title>
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- wow.js -->
+  <script src="wow.min.js"></script>
+  <style>
+    .container {
+      width: 600px;
+      margin: auto;
+    }
+    section {
+      border: 5px solid #000;
+      overflow: hidden;
+      margin: 300px 0;
+    }
+    section div {
+      border: 3px solid red;
+      width: 50%;
+      float: left;
+      height: 200px;
+      box-sizing: border-box;
+    }
+    .ltr {
+      animation: ltr 2s linear ;
+    }
+    .rtl {
+      animation: rtl 2s linear ;
+    }
+    .fadein {
+      animation: fadein 1s linear both;
+    }
+    .fadedown {
+      animation: fadedown 1s linear both;
+    }
+
+    @keyframes ltr {
+      0%{
+        transform: translateX(-100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes rtl {
+      0%{
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      100%{
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes fadedown {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width:768px) {
+      .container {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>wow.js bagic usage</h1>
+    <img src="http://placehold.it/600x1200" alt="">
+    <section>
+      <div class="ltr wow">
+        <p class="fadein wow">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati rem, vero earum qui atque explicabo eligendi facere soluta, nulla unde reprehenderit ullam animi, nobis vel dignissimos fugiat amet doloremque.
+        </p>
+      </div>
+      <div class="rtl wow">
+        <p class="fadein wow">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo obcaecati rem, vero earum qui atque explicabo eligendi facere soluta, nulla unde reprehenderit ullam animi, nobis vel dignissimos fugiat amet doloremque.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="ltr wow">left</div>
+      <div class="rtl wow">right</div>
+    </section>
+    <article>
+      <img class="fadedown wow" src="http://placehold.it/150x150" data-wow-delay="0.5s">
+      <img class="fadedown wow" src="http://placehold.it/150x150" data-wow-delay="1s">
+      <img class="fadedown wow" src="http://placehold.it/150x150" data-wow-delay="1.5s">
+    </article>
+    <img src="http://placehold.it/600x150" alt="">
+  </div>
+
+  <script>
+    wow = new WOW({
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       200,          // default
+        mobile:       true,       // default
+        live:         true        // default
+    })
+    wow.init();
+  </script>
+
+</body>
+</html>

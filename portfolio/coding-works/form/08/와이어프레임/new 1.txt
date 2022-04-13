@@ -1,0 +1,19 @@
+.centainer
+	.photo
+		p
+	.login
+		form
+			input[type=email]
+			input[type=password]
+			label> input[type=checkbox] *2
+			input[type=buttom]
+			.sns-login
+				span
+				.sns
+					a> font-icon *4
+			.joyin
+				.find
+					a *2
+				span> a
+				
+			

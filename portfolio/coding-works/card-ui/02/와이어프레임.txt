@@ -1,0 +1,35 @@
+.profile
+	.btn-pro
+	img.face
+	.trigger
+	h1 > span
+	p
+	.sns
+		(a > font-icon)*3
+	.status
+		(span > big) *3
+	a.btn-follow
+	
+	
+	
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap');
+
+font-family: 'Noto Sans SC', sans-serif;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+font-family: 'Rubik', sans-serif;
+
+
+<i class="fa fa-instagram"></i>
+<i class="fa fa-globe" aria-hidden="true"></i>
+
+eun joo
+
+I am a web publisher. Please contact us if you would like a design that follows the trend.
+
+unjulike1997@naver.com
+
+https://blog.naver.com/unjulike1997

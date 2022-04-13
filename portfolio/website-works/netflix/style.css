@@ -1,0 +1,415 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 26px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.5em;
+  background-color: #000;
+}
+body.active {
+  overflow: hidden;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+* {
+  font-family: 'Noto Sans', sans-serif; 
+}
+
+/* common CSS */
+section {
+  border-bottom: 7px solid #343434;
+  position: relative;
+}
+
+header {
+  overflow: hidden;
+  padding: 8px 35px;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  box-sizing: border-box;
+}
+.logo {
+  float: left;
+}
+.logo img {
+  width: 170px;
+}
+.signin {
+  float: right;
+}
+.signin button {
+  background-color: #a81010;
+  border: none;
+  font-size: 16px;
+  color:#fff;
+  padding: 7px 15px;
+  border-radius: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.getstared {
+  position: relative;
+  display: inline-block;
+}
+.getstared input,
+.getstared button {
+  height: 65px;
+  outline: none;
+  border: none;
+  vertical-align: middle;
+}
+.getstared input[type=email] {
+  width: 450px;
+  height: 65px;
+  margin-right: -8px;
+  padding-top: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border-radius: 3px 0 0 3px;
+}
+.getstared button {
+  width: 220px;
+  background-color: #a81010;
+  color: #fff;
+  font-size: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+.getstared input[type=email] + span {
+  color: #aaa;
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  transition: 0.25s;
+  font-size: 16px;
+  pointer-events: none;
+}
+.getstared input[type=email]:focus + span {
+  font-size: 14px;
+  color: #a2a2a2;
+  transform: translateY(-15px);
+  font-weight: bold;
+}
+
+/* section : welcome*/
+.welcome {
+  background: url(images/main.jpg) no-repeat center center;
+  height: 80vh;
+  background-size: cover;
+}
+.welcome:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.59);
+}
+.heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 800px;
+}
+.heading h1 {
+  width: 600px;
+  font-size: 50px;
+  margin: 0;
+  margin: auto;
+  line-height: 1.2em;
+}
+.heading h5 {
+  margin: 10px;
+  font-weight: normal;
+  font-size: 26px;
+}
+.heading p {
+  font-size: 19.2px;
+  width: 100%;
+  font-weight: 400;
+}
+
+
+
+/* section : enjoy*/
+.enjoy,
+.download,
+.watch,
+.create {
+  height: 500px;
+}
+.inner{
+/*  border: 1px solid;*/
+  width: 1150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.inner > div {
+  float: left;
+  width: 50%
+}
+.desc h1 {
+  font-weight: 700;
+  font-size: 50px;
+  padding-top: 50px;
+  line-height: 1.2em;
+}
+.desc p {
+  margin: 0;
+}
+.preview {
+/*  text-align: right;*/
+}
+.preview img {
+  height: 400px;
+}
+
+/* srction:faq */
+.faq {
+  border-bottom: none;
+/*  height: 500px;*/
+}
+.faq .inner{
+  width: 700px;
+  position: static;
+  transform: translate(0,0);
+  margin: auto;
+}
+.faq .inner h1{
+/*  text-align: center;*/
+  font-size: 50px;
+  margin: 70px 0;
+  width: 815px;
+}
+.accodion{
+/*  width: 640px;*/
+}
+
+input[name=faq] {
+  display: none;
+}
+input[name=faq] + label {
+  display: block;
+  background-color: #303030;
+  padding: 15px;
+  margin-bottom: 1px;
+  cursor: pointer;
+}
+input[name=faq] + label em {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 3px;
+  position: relative;
+  transition: 0.35s;
+}
+input[name=faq] + label em:before {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+}
+input[name=faq] + label em:after {
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  left: 0;
+  top: 50%;
+  transform: rotate(90deg);
+}
+.faq-content {
+  background-color: #303030;
+  margin-bottom: 10px;
+/*  display: none;*/
+/*  padding: 15px;*/
+  padding-top: 0;
+  box-sizing: border-box;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+input[name="faq"]:checked +label + .faq-content {
+/*  display: block;*/
+  max-height: 600px;
+  padding: 15px;
+}
+input[name=faq]:checked + label em {
+  transform: rotate(45deg);
+}
+
+.newsletter {
+  text-align: center;
+  padding: 70px 0; 
+}
+.newsletter p {
+  font-size: 19px;
+}
+
+/* footer */
+footer {}
+.footer-inner {
+  width: 900px;
+  margin: auto;
+  color: rgb(117, 117, 117)
+}
+.footer-inner > p {
+  font-size: 16px;
+  margin-top: 60px; 
+/*  border: 1px solid;*/
+  margin-bottom: 0;
+}
+.footer-inner a {
+  color: rgb(117, 117, 117);
+}
+.footer-inner a:hover {
+  text-decoration: underline;
+}
+
+.fnb {
+  font-size: 13px;
+  border-bottom: 1px solid #313131;
+/*  border: 1px solid;*/
+}
+.fnb div {
+  display: inline-block;
+  width: 24.7%;
+  vertical-align: top;
+}
+.fnb ul {
+  list-style: none;
+  padding: 0;
+}
+.fnb ul li {
+  line-height: 2.9em;
+}
+.info p {
+  font-size: 12px;
+  line-height: 1.3em;
+  margin-top: 60px;
+}
+.info p:nth-child(2) {
+  margin: 20px 0;
+}
+
+/* modal-login */
+.modal-login {
+  background-color: red;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  z-index: 100;
+}
+.modal-login.active {
+  opacity: 1;
+  visibility: visible;
+}
+.login {
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.91);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  color: #727272;
+  cursor: pointer;
+}
+input[type=text],
+input[type=password] {
+  background-color: #333;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  color: #fff;
+}
+input[type=button] {
+  width: 100%;
+  background-color: #c90808;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-top: 30px;
+}
+.save-info {
+  font-size: 13px;
+  color: #999;
+  overflow: hidden;
+}
+.save-info > label {
+  float: left;
+}
+.save-info a {
+  float: right;
+  color: #999;
+}
+.modal-login span {
+  font-size: 16px;
+  color: #999;
+}
+.service p {
+  font-size: 13px;
+  line-height: 1.2em;
+  color: #999;
+}
+
+input[type=radio] {
+  display: none;
+}
+label[for=more] {
+  cursor: pointer;
+}
+
+
+
+
+

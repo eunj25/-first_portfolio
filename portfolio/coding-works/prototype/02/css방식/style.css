@@ -1,0 +1,187 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+/* section : program  */
+section.program {
+  /* display: flex;
+  justify-content: center; */
+}
+.program .inner {
+  width: 1150px;
+  margin: auto;
+}
+.program .inner h1 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.program .inner h2 {}
+
+/* program : items */
+.program-items {
+  /* display: flex;
+  gap: 40px; */
+}
+.program-item {
+  /* display: inline-block;
+  width: 354px; */
+  float: left;
+  width: calc(calc(100% - 80px)/ 3);
+  margin-right: 40px;
+  /* flex: 1; */
+}
+.program-item:last-child {
+  margin-right: 0;
+}
+.item-list {
+  height: 160px;
+  text-align: center;
+  /* padding-top: 35px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item-list h4 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.item-list h4 small {
+  display: block;
+}
+.program-item:nth-child(1) .item-list {
+  background-color: #185eab;
+}
+.program-item:nth-child(2) .item-list {
+  background-color: #4f48a9;
+}
+.program-item:nth-child(3) .item-list {
+  background-color: #8c65c1;
+}
+.btn {
+  background-color: #0e3e72;
+  display: inline-block;
+  width: 110px;
+  padding: 7px;
+  color: #fff;
+  margin: 3px;
+}
+.program-item:nth-child(2) .btn,
+.program-item:nth-child(3) .btn {
+  width: 200px;
+}
+.program-item:nth-child(2) .btn {
+  background-color: #36317e;
+}
+.program-item:nth-child(3) .btn {
+  background-color: #603f8d;
+}
+.btn.common {}
+.btn.corp {}
+.item-desc {
+  border: 4px solid #185eab;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff;;
+}
+
+.program-item:nth-child(1) .item-desc {
+  border: 4px solid #185eab;
+}
+.program-item:nth-child(2) .item-desc {
+  border: 4px solid #4f48a9;
+}
+.program-item:nth-child(3) .item-desc {
+  border: 4px solid #8c65c1;
+}
+.item-desc p {
+  margin-top: 0;
+  text-align: center;
+}
+.item-desc div {
+  background-color: #eee;
+  padding: 10px;
+}
+.item-desc span {
+  display: block;
+  font-size: 13px;
+}
+.item-desc span::before {
+  content: '- ';
+}
+.download-status .inner {
+ text-align: center;
+}
+
+/* ############## css 방식 드롭다운 ############## */
+/* 01. show hide function : down */
+/* .item-desc {
+  display: none;
+}
+.program-item:hover .item-desc {
+  display: block;
+}  */
+/* 02. show hide function : slide down */
+/* .item-desc {
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: height 0.5s;
+}
+.program-item:hover .item-desc {
+  height: 240px;
+  padding: 15px;
+} */
+/* 03. show hide function : position */
+/* .program-item {
+  position: relative;
+}
+.item-desc {
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 0;
+}
+.program-item:hover .item-desc {
+  display: block;
+}  */
+/* 03. show hide function : opacity */
+.program-item {
+  position: relative;
+}
+.item-desc {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  opacity: 0;
+  transition: 0.35s;
+  visibility: hidden;
+}
+.program-item:hover .item-desc {
+  opacity: 1;
+  visibility: visible;
+} 

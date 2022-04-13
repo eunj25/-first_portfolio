@@ -1,0 +1,109 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-image: linear-gradient(-45deg, rgba(255,192,247,1) 0%, rgba(196,191,255,1) 100%);
+  height: 100vh;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.login {
+  width: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.35); 
+  background-color: #eee;
+}
+.login span {
+  font-weight: 500;
+  font-size: 13px;
+  color: #555;
+}
+input[type=email] {
+  margin: 5px 0; 
+  background: url(Untitled-2.png) no-repeat left 5px center;
+  background-size: 20px;
+}
+input[type=email],
+input[type=password] {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  font-size: 5px;
+}
+input[type=email]:focus,
+input[type=password]:focus {
+  box-shadow: 0 0 5px #a751f0;
+}
+input[type=password] {
+  background: url(Untitled-1.png) no-repeat left 5px center;
+  background-size: 20px;
+  background-color: #fff;
+}
+.login > div {
+  overflow: hidden;
+  margin: 13px 0;
+  font-size: 14px;
+}
+.login label {
+  float: left;
+}
+.login a {
+  float: right;
+}
+botton {
+  background-color: #af8ace;
+  width: 150px;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

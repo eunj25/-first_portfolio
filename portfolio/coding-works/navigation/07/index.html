@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>trigger control</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <style>
+    
+    body {
+      background-color: #fff;
+    }
+  
+    .trigger {
+      width: 30px;
+      height: 20px;
+      position: relative;
+      cursor: pointer;
+      z-index: 100;
+    }
+    .trigger span {
+      position: absolute;
+      background-color : #000;
+      height: 1px;
+      width: 100%;
+      transition: 0.35s;
+    }
+    .trigger span:nth-child(1) {
+      top: 0;
+    }
+    .trigger span:nth-child(2) {
+      top: 50%;
+    }
+    .trigger span:nth-child(3) {
+      top: 100%;
+    }
+    .trigger.active span {
+      background-color: #fff;
+    }
+    .trigger.active span:nth-child(1) {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    .trigger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .trigger.active span:nth-child(3) {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+    .sidebar {
+      width: 250px;
+      background-color: #000;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: -270px;
+/*      box-shadow: 5px 0 5px rgba(0, 0, 0, 0.12);*/
+      transition: 0.35s;
+      text-align: right;
+      padding: 50px 30px;
+      box-sizing: border-box;
+    }
+    .sidebar.active {
+      left: 0;
+    }
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+    }
+    
+  </style>
+</head>
+<body>
+  
+  <div class="trigger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="sidebar">
+    <a href="#none">회원가입</a>
+    <a href="#none">로그인</a>
+  </div>
+  
+  <script>
+    $('.trigger').click(function(){
+      $(this).toggleClass('active')
+    })
+    $('.trigger').click(function(){
+      $('.sidebar').toggleClass('active')
+    })
+  </script>
+  
+</body>
+</html>

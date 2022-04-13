@@ -1,0 +1,124 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Defailt CSS */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6em;
+  background: url(background-4320397_1920.jpg) no-repeat;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* Summer Class Applocation */
+.summer-class {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.17);
+  background-color: rgba(255, 255, 255, 0.78);
+}
+.summer-class h1 {
+  text-align: center;
+  margin: 30px;
+}
+.summer-class fieldset {
+  padding: 20px;
+  margin-top: 20px;
+  border: none;
+}
+.summer-class fieldset legend {
+  color: cornflowerblue;
+  font-weight: 600;
+}
+.summer-class fieldset div {
+  margin: 10px 0;
+}
+.summer-class .item {
+  width: 120px;
+  display: inline-block;
+  font-weight: 400;
+  vertical-align: top;
+/*  margin: 8px;*/
+}
+.summer-class input[type=text]:read-only {
+  width: 150px;
+}
+.summer-class input[type=text],
+.summer-class input[type=emil],
+.summer-class input[type=password],
+.summer-class textarea{
+  width: 220px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-size: 10px;
+}
+.summer-class input[type=text]:focus,
+.summer-class input[type=emil]:focus,
+.summer-class input[type=password]:focus {
+  background-color: #eee;
+}
+.summer-class select {
+  border: 1px solid cornflowerblue;
+  width: 220px;
+  border-radius: 5px;
+  color: #6d6d6d;
+  outline: none;
+}
+.summer-class input[name=gender] {}
+.summer-class .btn {
+  text-align: center;
+  margin: 20px;
+}
+.summer-class .btn input[type=submit],
+.summer-class .btn input[type=reset] {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  color: #fff;
+}
+.summer-class .btn input[type=reset] {
+  background-color: #fff;
+  color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

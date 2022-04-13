@@ -1,0 +1,91 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #222;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+/* Common CSS */
+.frame {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame span {
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  border: 1px solid #fff;
+  position: absolute;
+  width: inherit;
+  height: inherit; 
+  animation: rotate 10s linear infinite;
+  transition: 0.5s;
+}
+.frame span:nth-child(1) {
+  animation-duration: 8s;
+}
+.frame span:nth-child(2) {
+  animation-duration: 5s;
+  animation-direction: reverse;
+}
+.frame span:nth-child(3) {
+  animation-duration: 12s;
+}
+.frame:hover span {
+  background-color: lightcoral;
+  border-color: transparent;
+}
+.frame:hover span:nth-child(1) {
+  opacity: 0.2;
+}
+.frame:hover span:nth-child(2) {
+  opacity: 0.6;
+}
+.frame:hover span:nth-child(3) {
+  opacity: 0.8;
+}
+.frame .content {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+} 
+.frame .content a {
+  border-radius: 40% 60% 65% 35% / 40% 45% 55% 60%;
+  border: 1px solid #fff;
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.frame .content a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

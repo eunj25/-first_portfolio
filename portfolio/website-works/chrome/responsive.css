@@ -1,0 +1,179 @@
+/* mobile layout */
+@media (max-width: 768px) {
+  /* common css */
+  .container {
+    position: relative;
+  }
+  section {
+    padding: 0 20px;
+  }
+  .inner {
+    width: 100%;
+  }
+  .inner > div {
+    float: none;
+    width: 100%;
+  }
+  .inner img {
+    width: 90%;
+  }
+  /* header */
+  header {
+    width: 100%;
+  }
+  .download .btn-download {
+    display: none;
+    /* float: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; */
+  }
+  /* Section : Welcome */
+  section.welcome {
+    width: 100%;
+  }
+  .heading {
+    width: 100%;
+    padding: 15px;
+  }
+  .heading img {}
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading .staties p {
+    font-size: 12px;
+  }
+  .download-content span,
+  .staties {
+    display: none;
+  }
+  .next-section {
+    left: 44%;
+    width: 50px;
+    height: 50px;    
+    line-height: 50px;
+    bottom: 60px;
+    transform: translate(-50%, -50%);
+  }
+  section.feature {
+    width: 100%;
+    padding: 30px 0;
+  }
+  section.smart .inner,
+  section.edit .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  section.smart .inner .decs,
+  section.edit .inner .decs {
+    order: 1;
+  }
+  section.smart .inner .photo,
+  section.edit .inner .photo {
+    order: 2;
+  }
+  /* callaction */
+  .callaction {
+    width: 100%;
+    background:rgb(68, 127, 255) url(images/download-bg-mobile.svg) no-repeat center;
+    background-size: cover;
+    height: 200px;
+    padding-top: 15px;
+  }
+  .callaction-inner {
+    width: 100%;
+    margin: auto;
+  }
+  .callaction-inner h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 40px 0;
+  }
+  .inner .decs {
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .decs img {
+    width: 15%;
+  }
+  .decs h1 {
+    font-size: 25px;
+  }
+  .photo {
+    text-align: center;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .sns-outer {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  /* footer: sitemap */
+  .sitemap {
+    padding: 20px;
+  }
+  .sitemap .link-item {
+    float: none;
+    width: 100%;
+  }
+  .sitemap .link-item-title {
+    pointer-events: all;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    font-weight: 300;
+    position: relative;
+  }
+  .sitemap .link-item-title:before {
+    content:"\f078";
+    position: absolute;
+    font-family: fontawesome;
+    right: 20px;
+    font-size: 13px;
+    transition: 0.5s;
+  }
+  .sitemap .link-item-title.active:before {
+    transform: rotate(180deg);
+  }
+  .sitemap .link-item-content {
+    border-bottom: 1px solid #ddd;
+    display: none;
+  }
+  .logo-footer {
+    float: none;
+  }
+  /* footer: copyright */
+  .copyright {
+    border-top: none;
+    padding-top: 0;
+    padding: 10px;
+    height: 260px;
+  }
+  .logo-footer,
+  .policy,
+  .language {
+    float: none;
+    text-align: center;
+  }
+  .policy {}
+  .policy a {
+    font-size: 15px;
+    margin: 5px;
+  }
+  .language {
+    padding: 30px 10px;
+  }
+  .language span {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  .language select {
+    width: 200px;
+  }
+}

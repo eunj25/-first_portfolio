@@ -1,0 +1,92 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+/* percent silder */
+.tab-inner {
+  overflow: hidden;
+}
+.tabs {
+  width: 300%;
+  transition: 0.5s;
+  /* display: fixed; */
+}
+.tab {
+  height: 100vh;
+  float: left;
+  width: 33.33333%;
+  background-color: rgb(119, 119, 119);
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.tab::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.22);
+}
+.tab:nth-child(1) {
+  background: url(images/sea01.jpg) no-repeat center bottom ;
+  background-size: cover;
+}
+.tab:nth-child(2) {
+  background: url(images/sea03.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.tab:nth-child(3) {
+  background: url(images/sea02.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+.inner {
+  width: 800px;
+  z-index: 5;
+  line-height: 2em;
+}
+.btn {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.btn label {
+  width: 30px;
+  height: 15px;
+  border-radius: 30px;
+  display: inline-block;
+  margin: 5px;
+  background-color: #999;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* percent silder : checked function */
+.tab-inner input[name=tabmenu] {
+  display: none;
+}
+.tab-inner input[id=tab1]:checked ~ .btn label[for=tab1],
+.tab-inner input[id=tab2]:checked ~ .btn label[for=tab2],
+.tab-inner input[id=tab3]:checked ~ .btn label[for=tab3] {
+  background: #fff;
+  width: 80px;
+}
+.tab-inner input[id=tab1]:checked ~ .tabs {
+  transform: translateX(0);
+}
+.tab-inner input[id=tab2]:checked ~ .tabs {
+  transform: translateX(-33.33333%);
+}
+.tab-inner input[id=tab3]:checked ~ .tabs {
+  transform: translateX(-66.66666%);
+}

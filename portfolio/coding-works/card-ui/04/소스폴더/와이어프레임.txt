@@ -1,0 +1,44 @@
+나/
+section
+	.content
+		h1.heading
+		.items
+			.item *3
+				.photo
+				.info
+					h3
+					p
+					.deteil
+						span.face >img
+						span> font-icon *2 
+					a.btn-explore
+=========================
+쌤/
+section
+	.content
+		h1.heading
+		.items
+			.item
+				.photo
+				.info
+					h3
+					p
+					.deteil
+						span.profile
+						span.comment> font-icon
+					a.btn-explore
+					
+=====================================
+Best 3 marvel
+
+Iron Man, 2008
+2008,Now no hero is born
+ Just made! With the legendary superhero Iron Man
+ The meeting of Hollywood's strongest production team!
+
+Thor: Ragnarok, 2017
+The inevitable destruction of the world
+Stop'Ragnarok'!“Hela,” the goddess of death, invades Asgard,The world is in danger of the end of everything, “Ragnarok”.
+
+Avengers: Endgame, 2019
+Earth survived only half after Infinity War The Avengers became the last hope I bet everything for those who left first!

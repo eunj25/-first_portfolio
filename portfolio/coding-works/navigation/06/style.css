@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3.5em;
+}
+
+/* navigation */
+.navi {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.navi li {}
+.navi li a {
+  text-transform: uppercase;
+  position: relative;
+}
+.navi li a.active {
+  color: coral;
+}
+/* .navi li a::before {
+  content: attr(data-text);
+  color: royalblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  text-shadow: 1px 1px 0 royalblue, -1px -1px 0 royalblue;
+}
+.navi li a:hover:before {
+  width: 100%;
+} */
+.photo {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.photo img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transition: 0.5s;
+}

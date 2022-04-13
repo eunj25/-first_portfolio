@@ -1,0 +1,57 @@
+form.login
+	h1
+	label >input[type=text]
+	label >input[type=password]
+	.save
+		label >input[type=checkbox]
+		a
+	.event
+		span
+		label >input[type=radio]*2
+	a.btn-login
+	.sns-login
+		span
+		.sns
+			a*4
+	.join
+		span
+		a
+======================================
+form.login
+	h1
+	span
+	label >input[type=text]
+	span
+	label >input[type=password]
+	.save
+		label >input[type=checkbox]
+		a
+	.event
+		.custom
+			label >input[type=checkbox]*2
+	a.btn-login
+	label >input[type=button]
+		.sns
+			(a >i)*4
+	.sign-up
+		a
+======================================			
+login accounts
+
+user fmail
+user password
+
+save your email
+forget password?
+
+would you like to recelve event emails?
+yes no
+
+login
+
+or login using
+
+have not account yet?
+sign up
+
+		

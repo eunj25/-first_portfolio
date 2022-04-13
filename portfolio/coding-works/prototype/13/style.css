@@ -1,0 +1,173 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.7em;
+  background-color: #333;
+  height: 100%;
+}
+a, a:hover {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+section.project-gallery {
+  display: grid;
+  align-content: space-between;
+  /* height: 100vh; */
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+.items a {
+  position: relative;
+}
+.items a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+  opacity: 0;
+  transition: 0.5s;
+}
+.items a::after {
+  content: '\e913';
+  font-family: xeicon;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  opacity: 0;
+  color: #fff;
+}
+.items a:hover:after,
+.items a:hover:before {
+  opacity: 1;
+}
+
+.items a  img{
+  display: block;
+  width: 100%;
+}
+.story {
+  padding: 40px;
+}
+.story h1 {
+  margin-bottom: 50px;
+  color: pink
+}
+.story p span {
+  position: relative;
+  transition: 0.35s;
+}
+.story p span::before {
+  content: '';
+  position:absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.35s;
+  background-color: pink;
+  z-index: -1;
+}
+
+/* .story:hover p span::before {
+  width: 100%;
+}
+.story:hover p span {
+  color: #333;
+  z-index: 1;
+} */
+
+/* 호버 시키지 않을 선택자 넣기 */
+@media (hover: hover) {
+  .story:hover p span::before {
+    width: 100%;
+  }
+  .story:hover p span {
+    color: #333;
+    z-index: 1;
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    height: 100%;
+  }
+  section.project-gallery {}
+  .items {
+    margin: 2.5px 0;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .items a:last-child  {
+    grid-column: span 2;
+  }
+  .items.top a:nth-child(3)  {
+    grid-row: span 1;
+  }
+  .items.top a:last-child  {
+    grid-row: 2;
+  }
+  .items a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  .story {
+    /* grid-area: 1/1 / 2/2; */
+    grid-row: 1;
+    margin: 50px 0; 
+  }
+}
+
+/* mobile breakpoint */
+@media (max-width: 767px) {
+  section.project-gallery {}
+  .items {
+    margin: 2.5px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-columns: 1fr; */
+  }
+  .items a:last-child {
+    grid-column: span 2;
+  }
+  .story {
+    grid-area: 1/1 / 2/2;
+    margin: 50px 0; 
+  }
+  .uk-position-medium[class*=uk-position-center-left], .uk-position-medium[class*=uk-position-center-right] {
+      transform: translateY(180px);
+  }
+  .uk-position-center-right {
+    right: 70px;
+  }
+  .uk-position-center-left {
+    left: 70px;
+  }
+}

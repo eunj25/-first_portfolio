@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="uft-8">
+    <title>좌우이동탭메뉴-self</title>
+    <style>
+
+      body {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+      }
+    
+      .tab-inner {
+        border: 2px solid;
+        width: 400px;
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+        margin-right: 20px;
+      }
+      .content {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: -100px;
+        transition: 0.5s;
+      }
+      .btn {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .btn label {
+        background-color: #ddd;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      input[name=tabmenu02] {
+        display: none;
+      }
+      /* self */
+      .tabs {
+        width: 1200px;
+        transition: 0.5s;
+        overflow: hidden;
+      }
+      .tabs div {
+        float: left;
+      }
+      input[id=tab01]:checked ~.btn label[for=tab01],
+      input[id=tab02]:checked ~.btn label[for=tab02],
+      input[id=tab03]:checked ~.btn label[for=tab03] {
+        background-color: #000;
+        border-radius: 5px 5px 5px 5px;
+        width: 20px;
+        transition: 0.5s;
+      }
+      input[id=tab01]:checked ~ .tabs {
+        margin-left: 0;
+      }
+      input[id=tab02]:checked ~ .tabs {
+        margin-left: -400px;
+      }
+      input[id=tab03]:checked ~ .tabs {
+        margin-left: -800px;
+      }
+      
+      /* comment funtion */
+      input[name=tabmenu] {
+        display: none;
+      }
+      /* 좌우이동탭메뉴-self */
+      input[id=tab1]:checked ~.btn label[for=tab1],
+      input[id=tab2]:checked ~.btn label[for=tab2],
+      input[id=tab3]:checked ~.btn label[for=tab3] {
+        background-color: #000;
+        border-radius: 5px 5px 5px 5px;
+        width: 20px;
+        transition: 0.5s;
+      }
+      input[id=tab1]:checked ~ .tab1,
+      input[id=tab2]:checked ~ .tab2,
+      input[id=tab3]:checked ~ .tab3 {
+/*        display: block;*/
+        opacity: 1;
+        visibility: visible;
+        left: 0;
+      }
+      input[id=tab1]:checked ~ .sale h1:nth-child(1),
+      input[id=tab2]:checked ~ .sale h1:nth-child(2),
+      input[id=tab3]:checked ~ .sale h1:nth-child(3) {
+        transform: translateY(0);
+        transition: 0.5s;
+        transition-delay: 0.5s;
+      }
+      .sale h1 {
+        position: absolute;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 0 20px 20px;
+        padding: 5px;
+        margin: 0;
+        top: 0;
+        left: 20px;
+        transform: translateY(-110px);
+      }
+      .sale h1:nth-child(1) {
+        background-color: royalblue;
+      }
+      .sale h1:nth-child(2) {
+        background-color: gold;
+      }
+      .sale h1:nth-child(3) {
+        background-color: pink;
+      }
+      
+     
+      
+    </style>
+  </head>
+  <body>
+
+     <div class="tab-inner">
+      
+      <input type="radio" name="tabmenu02" id="tab01" checked>
+      <input type="radio" name="tabmenu02" id="tab02">
+      <input type="radio" name="tabmenu02" id="tab03">
+      <div class="tabs">
+        <div>
+          <img src="images/item01.jpg">
+        </div>
+        <div>
+          <img src="images/item02.jpg">
+        </div>
+        <div>
+          <img src="images/item03.jpg">
+        </div>
+      </div>  
+      <div class="btn">
+        <label for="tab01"></label>
+        <label for="tab02"></label>
+        <label for="tab03"></label>
+      </div>
+    </div>
+    
+    <!-- 좌우이동탭메뉴-self -->
+    <div class="tab-inner">
+      
+      <input type="radio" name="tabmenu" id="tab1" checked>
+      <input type="radio" name="tabmenu" id="tab2">
+      <input type="radio" name="tabmenu" id="tab3">
+      
+      <div class="content tab1">
+        <img src="images/item01.jpg">
+      </div>
+      <div class="content tab2">
+        <img src="images/item02.jpg">
+      </div>
+      <div class="content tab3">
+        <img src="images/item03.jpg">
+      </div>
+      
+      <div class="sale">
+        <h1>sale <big>30%</big></h1>
+        <h1>sale <big>30%</big></h1>
+        <h1>sale <big>30%</big></h1>
+      </div>
+      
+      <div class="btn">
+        <label for="tab1"></label>
+        <label for="tab2"></label>
+        <label for="tab3"></label>
+      </div>
+    </div>
+    
+	
+  </body>
+</html>

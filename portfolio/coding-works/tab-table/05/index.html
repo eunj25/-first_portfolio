@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>tab-menu</title>
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="testimonial">
+    <h1>Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit.</h1>
+    <div class="users">
+      <img src="imges/photo-1.jpg" class="active" data-alt="tab1">
+      <img src="imges/photo-2.jpg" data-alt="tab2">
+      <img src="imges/photo-3.jpg" data-alt="tab3">
+      <img src="imges/photo-4.jpg" data-alt="tab4">
+    </div>
+    <div class="testimonial-content">
+      <div class="content active" id="tab1">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus dolore unde minus delectus soluta quis exercitationem numquam? Aliquid distinctio impedit officia similique repellat accusamus, voluptas delectus, placeat quae, facilis voluptatem cumque nisi. Possimus corporis delectus autem. Veritatis asperiores culpa alias perferendis dolorum, laudantium magni ad nobis optio pariatur, consequuntur officia? Excepturi necessitatibus praesentium error fugit architecto molestiae blanditiis illum.
+        </p>
+        <b>Lorem ipsum</b>
+      </div>
+      <div class="content" id="tab2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus dolore unde minus delectus soluta quis exercitationem numquam? Aliquid distinctio impedit officia similique repellat accusamus, voluptas delectus, placeat quae, facilis voluptatem cumque nisi. Possimus corporis delectus autem. Veritatis asperiores culpa alias perferendis dolorum, laudantium magni ad nobis optio pariatur, consequuntur officia? Excepturi necessitatibus praesentium error fugit architecto molestiae blanditiis illum.
+        </p>
+        <b>dolor sit</b>
+      </div>
+      <div class="content" id="tab3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus dolore unde minus delectus soluta quis exercitationem numquam? Aliquid distinctio impedit officia similique repellat accusamus, voluptas delectus, placeat quae, facilis voluptatem cumque nisi. Possimus corporis delectus autem. Veritatis asperiores culpa alias perferendis dolorum, laudantium magni ad nobis optio pariatur, consequuntur officia? Excepturi necessitatibus praesentium error fugit architecto molestiae blanditiis illum.
+        </p>
+        <b>sit ame</b>
+      </div>
+      <div class="content" id="tab4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur voluptatibus dolore unde minus delectus soluta quis exercitationem numquam? Aliquid distinctio impedit officia similique repellat accusamus, voluptas delectus, placeat quae, facilis voluptatem cumque nisi. Possimus corporis delectus autem. Veritatis asperiores culpa alias perferendis dolorum, laudantium magni ad nobis optio pariatur, consequuntur officia? Excepturi necessitatibus praesentium error fugit architecto molestiae blanditiis illum.
+        </p>
+        <b>Lorem amet</b>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // user face image checked
+    $('.users img').click(function(){    
+
+      $('.users img').removeClass('active')
+      $(this).addClass('active')
+      // $(this).siblings().removeClass('active')
+      
+      var tabcontent = $(this).attr('data-alt')
+
+      $('.testimonial .content').removeClass('active')
+      $('#' + tabcontent).addClass('active')
+      // $('#' + $(this).attr('data-alt')).addClass('active')
+      // $('#tab1').addClass('active')
+      
+    });
+  </script>
+  
+</body>
+</html>

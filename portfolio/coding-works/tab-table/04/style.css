@@ -1,0 +1,126 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+input[name=tabmenu] {
+  display: none;
+}
+.tab-inner {
+  width: 800px; 
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.btn {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 10px 10px;
+}
+.btn label {
+  cursor: pointer;
+  margin-right: 15px;
+  color: #7c7c7c;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.btn label:hover {
+  color: crimson;
+}
+.tabs {}
+.content {
+/*  display: none;*/
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100px);
+  transition: 0.5s;
+}
+.content div {
+/*  border: 1px solid;*/
+  float: left;
+  box-sizing: border-box;
+}
+.content div:nth-child(1) {
+  width: 70%;
+}
+.content div:nth-child(1) h2 {
+  margin-top: 0;
+}
+.content div:nth-child(1) p {
+/*  border: 1px solid;*/
+  height: 120px;
+}
+.content div:nth-child(2) {
+  width: 30%;
+  text-align: right;
+}
+.content div:nth-child(2) img {
+  height: 200px;
+/*  width: 100%;*/
+}
+.btn-watch {
+  background-color: orange;
+  padding: 5px 30px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+
+input[id=tab1]:checked ~ .tabs .tab1,
+input[id=tab2]:checked ~ .tabs .tab2,
+input[id=tab3]:checked ~ .tabs .tab3 {
+/*  display: block;*/
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3]{
+  color: crimson;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

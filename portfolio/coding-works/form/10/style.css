@@ -1,0 +1,173 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.container {
+  width: 900px;
+  text-align: center;
+}
+.container h1 {
+  position: relative;
+  padding-bottom: 30px;
+}
+.container h1:after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}
+.container h1 b {
+  color: crimson;
+  font-style: normal;
+}
+.container h1 em {
+  display: block;
+  font-style: normal;
+}
+.container p {
+  font-size: 14px;
+}
+
+/* apply-form */
+.apply-form {
+  text-align: left;
+  border-top: 4px solid #ddd;
+  padding-top: 20px;
+}
+.apply-form fieldset {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border: none;
+}
+.apply-form fieldset.name > div,
+.apply-form fieldset.number > div {
+  flex: 1;
+}
+.apply-form .field span {
+  display: block;
+  font-weight: normal;
+  margin: 5px 0;
+}
+.apply-form .field span em {
+  color: crimson;
+}
+.apply-form .field input,
+.apply-form .field select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 3px; 
+}
+.apply-form .field input:focus,
+.apply-form .field select:focus,
+.apply-form .field textarea:focus {
+  outline: crimson;
+  border: 1px solid crimson;
+}
+.apply-form textarea {
+  width: calc(900px - 25px);
+  height: 120px;
+  border: 1px solid #ddd;
+  color: #999;
+  border-radius: 3px;
+}
+.apply-form iframe {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+/* fieldset : agree */
+.apply-form fieldset.agree {
+  flex-direction: column;
+}
+.apply-form fieldset.agree span {
+  font-weight: normal;
+}
+.apply-form fieldset.agree label {
+  font-size: 13px;
+}
+/* custom checkbox */
+.apply-form fieldset.agree label em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(Source/checkbox.png) no-repeat left;
+  transform: translateY(5px);
+}
+.apply-form fieldset.agree input[type=checkbox] {
+  display: none;
+}
+.apply-form fieldset.agree input[type=checkbox]:checked + em {
+  background-position: right;
+}
+/* input : type=submit */
+.container input[type=submit] {
+  width: 150px;
+  padding: 7px;
+  background-color: crimson;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .apply-form {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    align-items: flex-start;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .container h1 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .apply-form {
+    width: 100%;
+  }
+  .apply-form fieldset {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .apply-form textarea {
+    /* width: 310px; */
+    width: 100%;
+  }
+  .container input[type=submit] {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

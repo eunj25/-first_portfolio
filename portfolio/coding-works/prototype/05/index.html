@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal-animation</title>
+  <!-- jquery CDN -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<button class="open-modal">구독하기</button>
+
+
+<div class="modal-newsletter">
+  <div class="modal-newsletter-content">
+    <div class="photo"></div>
+    <div class="desc">
+      <button class="cloes-modal">&times;</button>
+      <div class="desc-header">
+        <h2>다양한 혜택을 받아보세요.</h2>
+      </div>
+      <div class="desc-body">
+        <input type="email" placeholder="이메일 주소를 입력하세요.">
+        <input type="submit" value="뉴스래터 구독하기">
+        <p>
+          MARVEL 뉴스룸의 다양한 소식과 혜택을 이메일로  반아 보시려면 구독신청 해주시기 바랍니다. MARVEL에 대해 알고 싶은 뉴스, 꼭 알아야 할 뉴스를 신속하고 정확하게 전합니다.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal-overay"></div>
+
+<script>
+  $('.modal-newsletter-content, .modal-overay').addClass('active')
+  $('.open-modal').click(function(){
+    $('.modal-newsletter-content, .modal-overay').addClass('active')
+  })
+  $('.cloes-modal, .modal-overay').click(function(){
+    $('.modal-newsletter-content, .modal-overay').removeClass('active')
+  })
+</script>
+
+</body>
+</html>

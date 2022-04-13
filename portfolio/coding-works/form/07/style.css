@@ -1,0 +1,189 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-size: 14px;
+  color: #000;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #f5f6f7;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* Reset CSS */
+* {
+  font-family: 'Noto Sans KR', sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+input, button, select {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+/* Common CSS */
+.member {
+  width: 530px;
+  margin: auto;
+  padding: 0 20px;
+}
+.member .logo {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+.member .field {
+  margin: 15px;
+}
+.field b {
+  display: block;
+  font-weight: 500;
+}
+span.placetext {
+  display: block;
+  position: relative;
+}
+span.placetext:before {
+  content: '@naver.com';
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  pointer-events: none;
+  color: #555;
+  font-weight: 300;
+}
+.member input:not(input[type=radio]),select {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+}
+.member input:not(input[type=radio]):focus,select:focus {
+  border: 1px solid rgb(17, 184, 17);
+}
+.userid::placeholder {
+  text-align: right;
+  font-weight: 200;
+}
+.userpw {
+  background: #fff url(images/icon-1.png) no-repeat center right 10px;
+}
+.userpw-confirm {
+  background: #fff url(images/icon-2.png) no-repeat center right 10px;
+}
+.field.birth > div {
+  display: flex;
+  gap: 10px;
+}
+.field .gender {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  margin-top: 5px;
+}
+input[type=radio] {
+  display: none;
+}
+.field label {
+  display: inline-block;
+  margin: 0 30px;
+}
+.field label em {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url(images/radio-box.png) no-repeat left;
+  transform: translateY(2px);
+  margin-right: 5px;
+  background-size: 30px;
+}
+.field input[type=radio]:checked ~ em {
+  background-position: right;
+}
+input[name=gender] {}
+.field b small {
+  color: #999;
+  font-weight: 300;
+}
+.member .field .tel-number {
+  width: 73%;
+  margin-right: 10px;
+}
+.btn {
+  padding: 15px;
+  background-color: rgb(17, 184, 17);
+  color:#fff;
+  border: none;
+}
+.phone-number {}
+.field .signin {
+  width: 100%;
+}
+.field .member-footer {
+  font-size: 12px;
+  text-align: center;
+  margin: 30px;
+  color: #999;
+}
+.member-footer a {
+  color: #888;
+}
+.member-footer div a:after {
+  content: '|';
+  font-size: 12px;
+  padding-left: 3px;
+  margin-right: -2px;
+  color: #999;
+  display: inline-block;
+  transform: translateY(-2px);
+}
+.member-footer div a:nth-child(2) {
+  font-weight: 500;
+}
+.member-footer div a:last-child:after{
+  display: none;
+}
+.member-footer a:hover {
+  text-decoration: underline;
+  color:rgb(17, 184, 17);
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff url(images/select.png) no-repeat center right 10px;
+  background-size: 15px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  appearance: none;
+}
+
+@media (max-width: 768px) {
+  .member {
+    width: 100%;
+  }  
+  .member .logo {
+    width: 180px;
+    display: block;
+    margin: 20px auto;
+  }
+  .member .field .tel-number {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .field label {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}

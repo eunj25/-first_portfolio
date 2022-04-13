@@ -1,0 +1,79 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* Defailt CSS */
+body {
+  background-color: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.button-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*  border: 1px solid #fff;*/
+.btn {
+/*  border: 1px solid #999;*/
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn:hover {
+  letter-spacing: 3px;
+}
+.btn:before {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: rgba(245, 0, 255, 0.21);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.btn:after {
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: rgba(245, 0, 255, 0.21);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.btn:hover:before {
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+.btn:hover:after {
+  transform: rotate(-45deg);
+  background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

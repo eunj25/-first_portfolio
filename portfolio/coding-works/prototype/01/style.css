@@ -1,0 +1,210 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:hover {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* section : gallrey */
+section.gallrey {
+  display: grid;
+  justify-items: center;
+  height: 100vh;
+  
+}
+.gallrey-inner {
+  width: 1000px;
+}
+.gallrey-header {
+  display: grid;
+  align-items: center;
+  height: 70px;
+  justify-items: end;
+}
+.gallrey-header .gnb {}
+.gallrey-header .gnb a {
+  position: relative;
+  margin-left: 10px;
+}
+.gallrey-header .gnb a::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: -5px;
+  width: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  transition: 0.5s;
+}
+.gallrey-header .gnb a:hover:before {
+  width: 100%;
+}
+
+.gallrey-search {
+  /* display: grid; */
+  /* grid-template-columns: auto auto; */
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.search {
+  position: relative;
+}
+.search::before {
+  content:"\f002";
+  position: absolute;
+  font-family: fontawesome;
+  right: 10px;
+  font-size: 18px;
+  color:#555;
+  bottom: 7px;
+}
+.gallrey-search input {
+  border: none;
+  border-bottom: 1px solid #222;
+  width: 200px;
+  padding: 10px;
+}
+.btn-inquire {
+  width: 200px;
+  background-color: crimson;
+  padding: 10px;
+  border-radius: 5px;
+  color:#fff;
+  border: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.432);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-inquire:hover {
+  background-color: #222;
+}
+.btn-inquire:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+.gallrey-items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: auto auto auto; */
+  grid-gap: 10px;
+}
+.item {
+  position: relative;
+  overflow: hidden;
+}
+.item img {
+  width: 100%;
+  display: block;
+}
+.item .desc {
+  background-color: rgba(0, 0, 0, 0.657);
+  /* display: grid;
+  grid-template-columns: auto auto; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* height: 80px; */
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  transition: 0.5s;
+  bottom: -80px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(0); */
+}
+.item .desc a {
+  color: #fff;
+}
+.item:hover .desc {
+  /* transform: translateY(-80px); */
+  bottom: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.item .desc div {
+  /* border: 1px solid #000; */
+}
+.item .desc .title p {
+  margin: 0;
+  text-transform: capitalize;
+}
+.item .desc .title span i {
+  color: crimson;
+}
+
+/* breakpoint */
+@media (max-width: 1150px) {
+  .gallrey-inner {
+    width: 100%;
+  }
+}
+
+/* tablet breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gallrey-inner {
+    padding: 30px;
+    width: 100%;
+  }
+  .gallrey-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* .item:last-child {
+    grid-column: 1/ span 2;
+  } */
+}
+
+/* mobile breakpoint */
+@media (max-width: 767px) {
+  .gallrey-header {
+    justify-items: center;
+  }
+  .gallrey-inner {
+    padding: 30px;
+    width: 100%;
+  }
+  .gallrey-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallrey-search {
+    display: block;
+    padding: 30px 0;
+  }
+  .gallrey-search input,
+  .btn-inquire {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .search::before {
+    bottom: 17px;
+  }
+}

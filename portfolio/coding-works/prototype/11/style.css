@@ -1,0 +1,164 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #222;
+  font-weight: 400;
+  margin: 0;
+  background: url(image/background.png) no-repeat center center;
+  background-size: cover;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.cotiner {
+  height: 1000px;
+}
+
+/* header */
+header {
+  width: 1280px;
+  height: 100px;
+  margin: auto;
+  /*  border: 1px solid;*/
+}
+
+nav {
+  overflow: hidden;
+}
+
+.logo {
+  /*  border: 1px solid;*/
+  float: left;
+  margin-top: 15px;
+}
+
+.gnb {
+  float: right;
+}
+
+.gnb a {
+  font-size: 16px;
+  color: #fff;
+  line-height: 100px;
+  margin-right: 40px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.gnb a:last-child {
+  margin-right: 0;
+}
+
+.gnb a .fa {
+  /*  border: 1px solid;*/
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #999;
+  font-size: 18px;
+}
+
+/* section */
+section {
+  width: 1280px;
+  margin: auto;
+  /*  border: 1px solid;*/
+  height: calc(100vh - 100px);
+}
+
+.section-inner {}
+
+.section-inner > div {
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.content {}
+
+.content heading {}
+
+h1 {
+  font-size: 60px;
+  color: #fff;
+  margin-top: 250px;
+}
+
+P {
+  font-size: 16px;
+  color: #fff;
+  margin: 80px 0;
+}
+
+.buttons {}
+
+.buttons .btn {
+  width: 230px;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 30px;
+  margin-right: 35px;
+}
+
+.btn.explore {
+  background-color: #fff;
+  border: 1px #fff;
+}
+
+.btn.cart {
+  background-color: #434343;
+  border: 1px solid #434343;
+  color: #fff;
+}
+
+.photo {
+  width: 590px;
+  /*  border: 1px solid;*/
+  text-align: center;
+  margin-top: 200px;
+}
+
+.photo-link {
+  width: 230px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 15px;
+  box-shadow: 5px 8px 10px #000;
+/*
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+*/
+}
+a:nth-child(1) .photo-link {
+  background: url(image/image01.PNG) no-repeat center center;
+  background-size: cover;
+}
+
+a:nth-child(2) .photo-link {
+  background: url(image/image02.PNG) center center no-repeat;
+  background-size: cover;
+}
+
+a:nth-child(3) .photo-link {
+  background: url(image/image03.PNG) center center no-repeat;
+  background-size: cover;
+}
+
+a:nth-child(4) .photo-link {
+  background: url(image/image04.PNG) center center no-repeat;
+  background-size: cover;
+}

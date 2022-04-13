@@ -1,0 +1,44 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+/* table : enrolment */
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
+	color: #222;
+	line-height: 1.6em;
+	background-color: #fff;
+}
+.enrolment {
+	border-collapse: collapse;
+	width: 800px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.enrolment caption {
+	background-color: crimson;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+.enrolment th {
+	background-color: royalblue;
+	color: #fff;
+	font-weight: normal;
+	border-top: 3px solid #000;
+	border: none;
+}
+.enrolment td,
+.enrolment th {
+	border: 1px solid #999;
+	padding: 5px;
+
+}
+.enrolment td ul {
+	text-align: left;
+}

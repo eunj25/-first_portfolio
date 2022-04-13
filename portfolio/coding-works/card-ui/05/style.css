@@ -1,0 +1,121 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* google web font */
+@font-face {
+  font-family: 'Jal_Onuel';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Jal_Onuel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Defailt CSS */
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color: #222;
+  font-weight: 300;
+  line-height: 1.5em;
+  background-color: #fff;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+section {}
+.heading {
+  font-family: 'Jal_Onuel';
+  text-align: center;
+  font-size: 3em;
+  text-align: center;
+  font-weight: normal;
+}
+.heading span {
+  color: deeppink;
+}
+.items-inner {
+  margin: auto;
+  width: 1350px;
+  /* border: 1px solid #000; */
+}
+.items {
+  /* text-align: center; */
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+  counter-reset: item;
+}
+.item {
+  /* border: 1px solid red; */
+  height: 400px;
+  flex: 1;
+  /* width: 250px;
+  display: inline-block;
+  margin: 8px; */
+  /* width: 20%; */
+  /* width: calc(1350px / 5); */
+  /* width: 250px; */
+  position: relative;
+}
+.item:before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: darkgrey;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-size: 18px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  transition: 0.5s;
+}
+.item:hover:before {
+  background-color: crimson;
+}
+.photo {
+  position: relative;
+  height: 320px;
+  margin-bottom: 10px;
+}
+.photo a {}
+.photo img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.photo img:first-child {
+  /* z-index: 1; */
+  opacity: 1;
+}
+.photo img:last-child {
+  opacity: 0;
+  /* z-index: 0; */
+}
+.photo:hover img:last-child {
+  opacity: 1;
+  /* z-index: 1; */
+}
+
+.detail {}
+.detail span {
+  display: block;
+}
+.detail .price {}
+.detail .price b {
+  color: crimson;
+}
+.detail .name {}
+.detail .count {
+  color: #ddd;
+  font-size: 12px;
+}

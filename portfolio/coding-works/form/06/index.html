@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="summer-class">
+    <h1>여름방학 특강 신청하기</h1>
+    <fieldset>
+      <legend>교육과정</legend>
+      <div>
+        <span class="item">영어회화</span><input type="text" value="오전 9:00 ~ 11:00까지" readonly>(초급레벨)
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>신청자 기본정보</legend>
+      <div>
+        <span class="item">이름</span><input type="text">
+      </div>
+      <div>
+        <span class="item">이메일</span><input type="emil">
+      </div>
+      <div>
+        <span class="item">비밀번호</span><input type="password">
+      </div>
+      <div>
+        <span class="item">학과</span>
+        <select>
+          <option value="">학과를 선택하세요</option>
+          <option value="">패션디자인학과</option>
+          <option value="">시각디자인학과</option>
+          <option value="">실용음악</option>
+        </select>
+      </div>
+      <div>
+        <span class="item">성별</span>
+        <label><input type="radio" name="gender" required>여자</label><label><input type="radio" name="gender" required>남자</label>
+      </div>
+      <div>
+        <span class="item">관심사</span><input type="checkbox" id="ckh1"><label for="ckh1">여행</label><input type="checkbox" id="ckh2"><label for="ckh2">게임</label><input type="checkbox" id="ckh3"><label for="ckh3">영화</label><input type="checkbox" id="ckh4"><label for="ckh4">운동</label><input type="checkbox" id="ckh5"><label for="ckh5">기타</label>
+      </div>
+      <div>
+        <span class="item">하고 싶은 말씀</span>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </fieldset>
+    <div class="btn">
+      <input type="submit" value="수강시청">
+      <input type="reset" value="다시쓰기">
+    </div>
+  </div>
+  
+</body>
+</html>

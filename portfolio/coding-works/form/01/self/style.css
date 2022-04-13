@@ -1,0 +1,26 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* Defailt CSS */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 300;
+  line-height: 1.6em;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+.login {
+  border: 1px solid;
+  width: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transtion Prototype</title>
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="open-navi">
+      <i class="xi-angle-right"></i>
+    </div>
+    <div class="close-navi">
+      <i class="xi-angle-left"></i>
+    </div>
+    <div class="gnb">
+      <h1>NEWS</h1>
+      <a href="#none">home</a>
+      <a href="#none">event</a>
+      <a href="#none">magazine</a>
+      <a href="#none">movie</a>
+    </div>
+    <div class="sns">
+      <a href="#none"><i class="xi-facebook"></i></a>
+      <a href="#none"><i class="xi-instagram"></i></a>
+      <a href="#none"><i class="xi-twitter"></i></a>
+    </div>
+    <div class="front">
+      <div class="content">
+        <hr>
+        <div class="main-photo">
+          <img src="photo-1.jpg" alt="">
+          <img src="photo-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <h1>'The Nelson-Atkins Museum of Art'</h1>
+          <p>
+            "The Penguin Three Musketeers has appeared in the museum?!
+          </p>
+          <p>
+            The world's most special guests were invited to 'The Nelson-Atkins Museum of Art' in Kansas City, USA. Three Humboldt penguins were invited to the Nelson Atkins Museum, which is temporarily closed due to the novel coronavirus (COVID-19), on the 6th (local time).</p>
+          <a href="#none">read more</a>
+        </div>
+        <!-- <hr> -->
+      </div>
+      <span>-1-</span>
+    </div>
+    <div class="back">
+      <div class="content">
+        <div class="news">
+          <div class="left">
+            <img src="photo-2.jpg" alt="">
+          </div>
+          <div class="right">
+            <div class="text">
+              <h1>'The Nelson-Atkins Museum of Art'</h1>
+              <p>
+                The museum said that it hopes that citizens who are 'staying at home' due to Corona 19 will feel vicarious satisfaction, and that the zoo has accepted the invitation to present a new experience to curious penguins. Bubbles (5 years old), Maggie (7 years old) and Berkley (8 years old) visiting from the Kansas City Zoo are Humboldt penguins from Chile and Peru.Julián Zugazagoitia, director of the Nelson Atkins Museum, announced that he had introduced the work in Spanish for them.
+              </p>
+            </div>
+            <div class="card">
+              <div>
+                "They responded much more to Caravaggio's work than to Claude Monet's," said Zugazaitia. According to him, contrary to expectations that penguins would prefer Monet's cool water lilies, he was captivated by the rich earthy color of the Baroque style and its unique depth and contrast.
+              </div>
+              <div class="sub-photo"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span>-2-</span>
+    </div>
+  </div>
+
+  <script>
+    $('.open-navi').click(function(){
+      $(this).addClass('active')
+      $('.close-navi').addClass('active')
+      $('.front').fadeOut()
+      $('.back').fadeIn()
+    })
+    $('.close-navi').click(function(){
+      $(this).removeClass('active')
+      $('.open-navi').removeClass('active')
+      $('.back').fadeOut()
+      $('.front').fadeIn()
+    })
+  </script>
+  
+</body>
+</html>

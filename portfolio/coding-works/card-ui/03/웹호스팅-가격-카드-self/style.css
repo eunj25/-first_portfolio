@@ -1,0 +1,99 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	line-height: 1.6em;
+	color: #222;
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+ 	height: 100vh;
+}
+a {
+	color: #222;
+	text-decoration: none;
+}
+
+.content {
+	/* border: 1px solid; */
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.items {}
+.item {
+	/* border: 1px solid; */
+	display: inline-block;
+	margin: 15px;
+	width: 250px;
+	padding: 20px;
+	padding-bottom: 30px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	position: relative;
+	transition: 0.3s;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+	/* background-color: #fff; */
+}
+.item:hover {
+	background-color: #333;
+	color: #fff;
+	transform: scale(1.05);
+}
+.item img {
+	position: absolute;
+	top: -100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.item h2 {
+	margin-top: 120px;
+	text-transform: uppercase;
+}
+.item p {}
+
+.spec-price {}
+.spec-price span {
+	margin: 5px;
+	/* vertical-align: middle; */
+}
+.spec-price .spec {}
+.spec-price .price {
+	font-weight: bold;
+	font-size: 23px;
+}
+
+.amount-cart {
+	margin-top: 20px;
+}
+.amount-cart span {
+	margin: 10px;
+}
+.amount {}
+.amount em {}
+
+.btn-cart {
+	border: 1px solid #86b550;
+	background-color: #86b550;
+	border-radius: 20px;
+	padding: 5px 20px;
+}
+.btn-cart:hover {
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: #222;
+}
+
+.item:nth-child(2) .btn-cart:hover {
+	border: 1px solid #c3475b;
+	background-color: #c3475b;
+	color: #fff;
+}

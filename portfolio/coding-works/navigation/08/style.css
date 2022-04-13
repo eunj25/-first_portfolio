@@ -1,0 +1,63 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 15px;
+	color: #222;
+	line-height: 1.6em;
+	background-color: #fff;
+}
+a {
+	color: #222;
+	text-decoration: none;
+}
+/* dropdown navigation */
+.dropdown {
+	border: none;
+	width: 200px;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.dropdown button {
+	border: none;
+	background-color: #3498db;
+	width: 200px;
+	padding: 15px;
+	color: #fff;
+	position: relative;
+}
+.dropdown-submenu {
+	position: absolute;
+	width: 200px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-top: none;
+	display: none;
+}
+.dropdown-submenu a {
+	display: block;
+	text-align: center;
+	border-bottom: 1px dashed #ccc;
+	padding: 5px;
+}
+.dropdown .fa {
+	margin-right: 5px;
+}
+.dropdown:hover .dropdown-submenu {
+	display: block;
+}
+.dropdown:hover button {
+	background-color: #f1c40f;
+}
+.dropdown-submenu a:hover {
+	background-color: #ecf0f1;
+}
+.dropdown-submenu a:last-child {
+	border: none;
+}

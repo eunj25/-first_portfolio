@@ -1,0 +1,27 @@
+<input type="text" placeholder="아이디를 입력">
+placeholder 임시로 적히는 내용
+
+
+form.login
+	h1
+	label >input[type=text]
+	label >input[type=password]
+	
+	.btn-login
+		input[type=button]
+		a
+	
+	.login-info
+		label >input[type=checkbox]
+		a
+	
+	.EVENt-info
+		span
+		label >input[type=radio]
+		
+	.sns
+		a >font-icon *3
+	
+	
+	
+	

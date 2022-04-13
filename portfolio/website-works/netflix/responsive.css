@@ -1,0 +1,197 @@
+@media (max-width: 1150px) {
+  .inner {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  /* Common CSS */
+  section {
+    padding: 30px;
+    box-sizing: border-box;
+  }
+    
+  .signin button {
+    font-size: 12px; 
+    margin: 20px -10px;
+  }
+  .welcome {
+    height: 100vh;
+  }
+  .getstared input[type=email] {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+  }
+  .getstared button {
+    width: 150px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  .getstared input[type=email] + span {
+    padding: 0 20px;
+  }
+  .enjoy,
+  .download,
+  .watch,
+  .create {
+    height: auto;
+  }
+  .getstarted {}
+  .getstarted input {
+    margin-bottom: 10px;
+  }
+  
+  .logo img {
+    width: 120px;
+    margin: 10px -20px;
+  }
+  .heading {
+    width: 100%;
+  }
+  .heading h1 {
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .heading h5,
+  .heading p {
+    font-size: 18px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .inner {
+    width: 100%;
+    position: static;
+    transform: translate(0, 0);
+  }
+  .inner > div {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .desc h1 {
+    font-size: 27px;
+  }
+  .preview img {
+    width: 100%;
+    height: auto;
+  }
+  .faq .inner {
+    width: 100%;
+  }
+  .faq .inner h1 {
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 15px 0;
+  }
+  .newsletter {
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .newsletter p {
+    font-size: 19px;
+    padding: 0 10px;
+  }
+  .footer-inner {
+    width: 100%;
+  }
+  .faq-content {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  .accordion {
+    padding: 10px;
+  }
+  input[name=faq] + label em {
+    width: 20px;
+    height: 20px;
+  }
+  .links ul {
+    width: 48%;
+  }
+  footer {
+    padding: 0 30px;
+    padding-bottom: 30px;
+  }
+  .fnb {
+    margin: 20px 0;
+    padding-bottom: 20px;
+  }
+  .fnb > div {
+/*    border: 1px solid;*/
+    width: 49%;
+  }
+  .fnb ul {
+    padding: 0;
+    margin: 0;
+  }
+  .fnb ul li {
+    line-height: 2em;
+  }
+  
+  /* Change Order */
+  .download .inner,
+  .create .inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .download .inner .preview,
+  .create .inner .preview {
+    order: 2;
+  }
+  .download .inner .desc,
+  .create .inner .desc {
+    order: 1;
+  }
+  .modal-login {
+    background-color: #000;
+  }
+  .login {
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+    background-color: #000;
+    margin-top: 50px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

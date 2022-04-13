@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--jQuery  css-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!--custom css-->
+  <link rel="stylesheet" href="style-reset.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="logo.png" alt="">
+        </div>
+        <div class="header-inner">
+          <div class="gnb">
+            <a href="#link01">ABOUT</a>
+            <a href="#link02">SKILLS</a>
+            <a href="#link03">WEBSITE PUBLISHING</a>
+            <a href="#link04">MOBILE PUBLISHINGLET'S</a>
+          </div>
+          <div class="lnd">
+            <a href="#none">WORK TOGETHER</a>
+          </div>
+        </div>
+      </nav>
+      <div class="trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+    <section id="link01">
+      <h1>link01</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam non repellat veniam atque explicabo quaerat modi, officiis at ullam magni earum perferendis sunt. Inventore repellendus eaque id sed sunt?
+      </p>
+    </section>
+    <section id="link02">
+      <h2>link2</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam non repellat veniam atque explicabo quaerat modi, officiis at ullam magni earum perferendis sunt. Inventore repellendus eaque id sed sunt?
+      </p>
+    </section>
+    <section id="link03">
+      <h3>link3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam non repellat veniam atque explicabo quaerat modi, officiis at ullam magni earum perferendis sunt. Inventore repellendus eaque id sed sunt?
+      </p>
+    </section>
+    <section id="link04">
+      <h1>link4</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam non repellat veniam atque explicabo quaerat modi, officiis at ullam magni earum perferendis sunt. Inventore repellendus eaque id sed sunt?
+      </p>
+    </section>
+  </div>
+  
+  <script>
+    $('.trigger').click(function(){
+      $(this).toggleClass('active')
+      $('nav').toggleClass('active')
+    })
+    $('.gnb a, section').click(function(){
+      $('nav').removeClass('active')
+      $('.trigger').toggleClass('active')
+    })
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* Font Awesome 4.7.0 CND */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Defailt CSS */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #fff;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+/*cool hover button*/
+.btn {
+  width: 250px;
+  height: 50px;
+  border: 1px solid;
+  display: block;
+  position: relative;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.5s;
+}
+
+.btn:before {
+  content: attr(data-text1);
+  font-family: fontawesome;
+  background-color: skyblue;
+  color: #333;
+  top: 0;
+  left: 0;
+}
+
+.btn:after {
+  content: attr(data-text2);
+  background-color: pink;
+  color: #fff;
+  top: 100%;
+  left: 0;
+}
+
+.btn:hover:before {
+  top: -100%;
+}
+
+.btn:hover:after {
+  top: 0;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hover-bakcground-image</title>
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Common CDN -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <ul class="navi">
+      <li data-image="images/image-01.jpg"><a href="#none" data-text="about">about</a></li>
+      <li data-image="images/image-02.jpg"><a href="#none" data-text="instructor">instructor</a></li>
+      <li data-image="images/image-03.jpg"><a href="#none" data-text="class">class</a></li>
+      <li data-image="images/image-04.jpg"><a href="#none" data-text="location">location</a></li>
+    </ul>
+    <div class="photo">
+      <img src="images/image-01.jpg" alt="">
+    </div>
+  </div>
+
+  <script>
+    /* $('.navi li').mouseenter(function(){
+      var changeImage = $(this).attr('data-image')
+      $('.photo img').attr('src', changeImage)
+    })
+    $('.navi li').mouseleave(function(){
+      $('.photo img').attr('src', 'images/image-01.jpg')
+    }) */
+
+    $('.navi li').click(function(){
+      // $('.navi li a').addClass('active')
+      // $('.navi li a').removeClass('active')
+      $(this).children().addClass('active')
+      $(this).siblings().children().removeClass('active')
+
+       var changeImage = $(this).attr('data-image')
+      $('.photo img').attr('src', changeImage)
+    })
+
+  </script>
+  
+</body>
+</html>

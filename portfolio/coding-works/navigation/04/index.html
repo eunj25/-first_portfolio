@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>toggle-nav</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="toggle">
+    <i class="xi-plus"></i>
+  </div>
+  <div class="overlay"></div>
+
+  <ul class="gnb">
+    <li><a href="#none">home</a></li>
+    <li><a href="#none">about</a></li>
+    <li><a href="#none">service</a></li>
+    <li><a href="#none">team</a></li>
+    <li><a href="#none">portfolio</a></li>
+    <li><a href="#none">contact</a></li>
+  </ul>
+
+  <script>
+    $('.toggle').click(function(){
+      $('.overlay, .toggle, .gnb').toggleClass('active')
+    })
+  </script>
+  
+</body>
+</html>

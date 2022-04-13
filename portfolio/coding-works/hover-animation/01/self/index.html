@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="uft-8">
+    <title>툴팁-self</title>
+    <style>
+    
+    /* Font Awesome 4.7.0 CND */
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+      
+      .tooltip {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+/*        border: 1px solid;*/
+      }
+      .tooltip .fa {
+        font-size: 25px;
+        color: royalblue;
+      }
+      .tooltip span {
+        position: absolute;
+        width: 230px;
+        border-radius: 3px;
+        background-color: #ddd;
+        padding: 5px 8px;
+        top: -70px;
+        left: 50%;
+        transform: translateX(-50%);
+/*        display: none;*/
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+      }
+      .tooltip span:before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: #ddd;
+        position: absolute;
+        transform: translateX(-50%) rotate(45deg);
+        bottom: -7px;
+        left: 50%;
+      }
+      .tooltip:hover span {
+/*        display: block;*/
+        opacity: 1;
+        visibility: visible;
+      }
+      
+    
+    </style>
+  </head>
+
+  <body>
+    
+    <div class="tooltip">
+      <i class="fa fa-question-circle"></i>
+      <span>PC방 등 공용 PC라면 안전하게 사용해 보세요.</span>
+    </div>
+
+  </body>
+</html>

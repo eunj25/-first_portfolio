@@ -1,0 +1,85 @@
+/* xelcon CND */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* google web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+body {
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.6em;
+  background: #222;
+}
+a {
+  color: #222;
+  text-decoration: none;
+}
+.sns {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sns a {
+  position: relative;
+  margin: 10px;
+}
+.sns a:before {
+  content: attr(data-text);
+  position: absolute;
+  background-color: #ddd;
+  width: 80px;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+.sns a:after {
+  content: '';
+  position: absolute;
+  background-color: #ddd;
+  width: 8px;
+  height: 8px;
+  top: -15px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.sns a:before,
+.sns a:after {
+  display: none;
+}
+.sns a:hover:before,
+.sns a:hover:after {
+  display: block;
+}
+
+.sns a i {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
